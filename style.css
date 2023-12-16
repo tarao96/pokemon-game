@@ -1,0 +1,106 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+    background-color: black;
+}
+h1 {
+    margin: 0;
+}
+button {
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #ccc;
+}
+.app {
+    display: inline-block;
+    position: relative;
+}
+.wrap {
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* 攻撃 */
+.attack-box {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 140px;
+    border-top: 3px solid black;
+}
+.attack-select {
+    width: 66.66%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.attack-type {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid black;
+}
+.attack-type h1 {
+    font-size: 16px;
+}
+.attack-txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 12px;
+    display: none;
+    cursor: pointer;
+}
+
+/* ポケモン情報 */
+.pokemon {
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    border: 3px solid black;
+    padding: 12px;
+}
+.enemy-info {
+    top: 50px;
+    left: 50px;
+}
+.ally-info {
+    top: 330px;
+    right: 50px;
+}
+.pokemon h1 {
+    font-size: 16px;
+}
+.health-box {
+    position: relative;
+}
+.health-bar-base {
+    height: 5px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+.health-bar {
+    height: 5px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,46 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="app">
+    <div id="overlappingDiv" class="wrap"></div>
+    <canvas></canvas>
+    <div id="userInterface" style="display: none">
+        <!-- Draggle -->
+        <div class="enemy-info pokemon">
+            <h1>Draggle</h1>
+            <div class="health-box">
+                <div class="health-bar-base"></div>
+                <div id="enemyHealthBar" class="health-bar"></div>
+            </div>
+        </div>
+        <!-- emby -->
+        <div class="ally-info pokemon">
+            <h1>Emby</h1>
+            <div class="health-box">
+                <div class="health-bar-base"></div>
+                <div id="playerHealthBar" class="health-bar"></div>
+            </div>
+        </div>
+        <div class="attack-box">
+            <div id="dialogueBox" class="attack-txt"></div>
+            <div id="attacksBox" class="attack-select"></div>
+            <div id="attackType" class="attack-type">
+                <h1>Attack Type</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="data/audio.js"></script>
+<script src="data/battlezones.js"></script>
+<script src="data/collisions.js"></script>
+<script src="data/attacks.js"></script>
+<script src="data/monsters.js"></script>
+<script src="classes.js"></script>
+<script src="index.js"></script>
+<script src="battleScene.js"></script>
